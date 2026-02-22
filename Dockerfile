@@ -1,8 +1,8 @@
 FROM eclipse-temurin:21-jdk
 
-ENV VERSION 11.2.1_PUBLIC
-ENV DL https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.2.1_build/ghidra_11.2.1_PUBLIC_20241105.zip
-ENV GHIDRA_SHA ce4db5117da0fbaf8f33863fec4f40902f754f06b68945a59fb1c0f9b1bc461c
+ENV VERSION 11.4.1_PUBLIC
+ENV DL https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.4.1_build/ghidra_11.4.1_PUBLIC_20250731.zip
+ENV GHIDRA_SHA 59b657c39c2113d65e591c1087b77d85f6f7a11e97f2f4a0c9e7188510d07ea0
 
 RUN apt-get update && apt-get install -y wget unzip dnsutils --no-install-recommends \
     && wget --progress=bar:force -O /tmp/ghidra.zip ${DL} \
